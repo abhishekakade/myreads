@@ -1,9 +1,11 @@
 {
+  "homepage": "https://abhishekakade.github.io/myreads",
   "name": "myreads-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -12,6 +14,8 @@
     "sort-by": "^1.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
