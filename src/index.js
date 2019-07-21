@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import { BrowserRouter } from "react-router-dom";
+// renamed BrowserRouter to HashRouter for GitHub Pages deployment
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>, 
+  </HashRouter>, 
   document.getElementById('root'));
   
